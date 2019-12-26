@@ -13,7 +13,7 @@ a {
 
 /* Header */
 .container {
-  width: 1200px;
+  width: 1180px;
   height: 150px;
   margin: 0px auto;
   text-align: center;
@@ -41,7 +41,7 @@ a {
 
 /* banner */
 .banner {
-  height: 450px;
+  /* height: 450px; */
   text-align: center;
   margin: 0px auto;
 }

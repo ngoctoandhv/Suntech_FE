@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul li {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  width: 970px;
+  margin: 0px auto;
+}
+
+/* header */
+.header {
+  height: 50px;
+}
+.header .logo {
+  width: 25%;
+  float: left;
+  line-height: 10px;
+  padding: 5px 0px;
+}
+.header .search {
+  width: 45%;
+  float: left;
+  position: relative;
+}
+.search .box {
+  line-height: 50px;
+}
+.search .box .text-search {
+  padding: 5px 25px 5px 5px;
+  width: 400px;
+  height: 30px;
+}
+.search .icon4 {
+  position: absolute;
+  display: block;
+  top: 13px;
+  left: 366px;
+}
+
+.header .icon {
+  width: 30%;
+  float: right;
+  text-align: right;
+}
+.header .icon ul li {
+  display: inline-block;
+  padding: 11px 0px;
+}
+
+/* menu */
+.container_full {
+  width: auto;
+  height: 30px;
+  background: #2fa1b3;
+}
+.container_full .icon5 {
+  width: 4%;
+  height: 30px;
+  float: left;
+}
+.container_full .menu {
+  width: 96%;
+  height: 30px;
+  float: left;
+}
+.container_full .menu ul li {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 400;
+  color: white;
+  padding: 0px 3px;
+  line-height: 30px;
+}
+.container_full .menu ul li:hover {
+  background: #247a88;
+}
+/* banner */
+.banner {
+  width: 100%;
+  height: auto;
+  margin: 15px 0px;
+}
+/* content */
+.content {
+  width: 70%;
+  min-height: 300px;
+  background: yellow;
+  float: left;
+}
+
+/* sidebar */
+.sidebar {
+  width: 30%;
+  min-height: 300px;
+  background: yellowgreen;
+  float: right;
+}
+
+/* footer */
+.footer {
+  height: 50px;
+  background: grey;
+  clear: both;
+}

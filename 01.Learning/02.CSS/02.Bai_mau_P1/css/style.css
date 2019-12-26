@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    width: 1170px;
+    margin: auto;
+}
+
+.container .row {
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.container .row .logo {
+    float: left;
+    width: 12%;
+}
+
+.container .row .slogan {
+    float: left;
+    width: 48%;
+    line-height: 125px;
+}
+
+.container .row .menu {
+    float: right;
+    width: 40%;
+    line-height: 125px;
+}
+
+.container .row .menu {
+    float: right;
+    width: 40%;
+    text-align: right;
+}
+
+.container .row .menu ul li {
+    display: inline-block;
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.container .row .menu ul li a {
+    color: #067655;
+}
+
+.banner {
+    width: 100%;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.container .product {
+    display: inline-block;
+    width: 100%;
+}
+
+.container .product .item {
+    text-align: center;
+    float: left;
+    width: 20%;
+    margin-top: 20px;
+}
+
+.container .product .item .title {
+    margin-top: 10px;
+}
+
+.container .product .item .title a {
+    color: #cb1335;
+}
+footer{
+    background: #067655;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    padding: 25px 0;
+    margin-top: 30px;
+}
