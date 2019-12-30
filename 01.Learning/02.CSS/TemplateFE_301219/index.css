@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.menu ul li {
+  display: inline-block;
+  margin-right: 20px;
+  position: relative;
+  padding-bottom: 5px;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: #000;
+}
+.menu ul li ul {
+  width: 100%;
+  background: red;
+  position: absolute;
+  top: 100%;
+  display: none;
+}
+.menu ul li:hover ul {
+  display: block;
+}
+.menu ul li ul li {
+  width: 100%;
+  margin: 0px;
+  padding: 5px;
+  border-bottom: 1px solid #ffffff;
+}
+.menu ul li ul li a {
+  color: aliceblue;
+}
