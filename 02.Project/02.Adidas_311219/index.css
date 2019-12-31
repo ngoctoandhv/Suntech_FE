@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+body {
+  font-family: sans-serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* header */
+.container {
+  width: 1170px;
+  margin: 0px auto;
+}
+.container .header {
+  height: 52px;
+  display: inline-block;
+}
+.container .header .menu ul li {
+  display: inline-block;
+}
+.container .header .logo {
+  float: left;
+  height: 52px;
+  background: aqua;
+}
+.container .header .menu {
+  float: left;
+  width: 945px;
+  height: 52px;
+}
+.container .header .menu ul {
+  text-align: center;
+  margin-top: 15px;
+}
+.container .header .menu ul li {
+  margin-right: 35px;
+}
+.container .header .menu ul li a {
+  color: #49535d;
+}
+.container .header .contact {
+  float: right;
+  width: 100px;
+  height: 53px;
+  text-align: center;
+}
+.container .header .contact button {
+  background: #cb6127;
+  width: 100px;
+  height: 28px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 14px;
+}
+.container .header .contact button a {
+  color: #ffffff;
+}
+
+/* section */ /* banner */
+.container-full {
+  width: 100%;
+  margin: 0px auto;
+}
+.container-full .banner {
+  margin: 0px auto;
+  /* height: 490px; */
+}
+
+.container-full .banner .img-banner {
+  width: 100%;
+  min-height: 490px;
+  background-image: url(./images/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+/* .container-full .banner .img-banner img {
+  width: 100%;
+  max-height: 490px;
+} */
+
+.container-full .banner .container {
+  position: relative;
+}
+.container-full .banner .text-banner {
+  width: 520px;
+  height: 180px;
+  position: absolute;
+  top: -335px;
+  text-align: left;
+}
+.container-full .banner .text-banner h1 {
+  font-size: 35px;
+  /* line-height: 50px; */
+  padding-bottom: 20px;
+}
+.container-full .banner .text-banner p {
+  color: #49535d;
+  padding-bottom: 20px;
+}
+.container-full .banner .text-banner button {
+  width: 135px;
+  height: 40px;
+}
+.container-full .banner .text-banner .one {
+  background: #000000;
+  border: none;
+  position: relative;
+}
+.container-full .banner .text-banner .tow {
+  background: rgba(0, 0, 0, 0);
+  border: 1px solid #000000;
+  position: absolute;
+  left: 5px;
+  bottom: -2px;
+}
+.container-full .banner .text-banner .one a {
+  color: white;
+}
+.container-full .banner .text-banner .tow a {
+  color: #000000;
+}
+
+/* section */ /* product */
+section .container .product {
+  margin-top: 25px;
+  display: inline-block;
+  text-align: center;
+  min-height: 600px;
+}
+.container .product .sub-product {
+  width: 292px;
+  float: left;
+}
+.container .product .sub-product a {
+  color: #000000;
+  line-height: 25px;
+}
+.container .product .sub-product p {
+  color: #49535d;
+  line-height: 25px;
+}
+
+/* aside */
+aside .container-full {
+  margin: 0px auto;
+  background: red;
+  width: 100%;
+  position: relative;
+}
+
+aside .container-full .img-ads {
+  position: absolute;
+  bottom: 100%;
+}
+aside .container-full .close-ads {
+  position: absolute;
+  left: 269px;
+  top: -301px;
+}
+aside .container-full .close-ads button {
+  height: 30px;
+  width: 30px;
+  border: none;
+  border-radius: 50%;
+  background: #c75b26;
+  color: white;
+}
+aside .container-full .close-ads button a {
+  color: white;
+}
