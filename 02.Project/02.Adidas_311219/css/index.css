@@ -76,7 +76,7 @@ a {
 .container-full .banner .img-banner {
   width: 100%;
   min-height: 490px;
-  background-image: url(./images/banner.jpg);
+  background-image: url(../images/banner.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -107,7 +107,7 @@ a {
 }
 .container-full .banner .text-banner button {
   width: 135px;
-  height: 40px;
+  height: 45px;
 }
 .container-full .banner .text-banner .one {
   background: #000000;
@@ -118,8 +118,8 @@ a {
   background: rgba(0, 0, 0, 0);
   border: 1px solid #000000;
   position: absolute;
-  left: 5px;
-  bottom: -2px;
+  left: 6px;
+  bottom: -6px;
 }
 .container-full .banner .text-banner .one a {
   color: white;
@@ -175,4 +175,28 @@ aside .container-full .close-ads button {
 }
 aside .container-full .close-ads button a {
   color: white;
+}
+
+/* menudacap */
+.container .header .menu ul li ul li {
+  margin-top: 5px;
+  text-align: left;
+  padding-top: 5px;
+  width: 90px;
+  border-bottom: 1px solid #ffffff;
+}
+
+header .container .header .menu ul li {
+  display: inline-block;
+  position: relative;
+}
+
+.menu ul li ul {
+  background: rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0px;
+  display: none;
+}
+.menu ul li:hover ul {
+  display: block;
 }
