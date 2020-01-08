@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Maven Pro", sans-serif;
+}
+.container {
+  width: 1170px;
+  margin: auto;
+}
+.container .row-one {
+  display: flex;
+  justify-content: space-between;
+}
+.container .row-one .product {
+  background: #ffffff;
+  margin-top: 30px;
+  width: 355px;
+  min-height: 230px;
+  border: 1px solid #e8e8e8;
+}
+.item {
+  padding: 20px;
+}
+.item .item-one {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.item .item-one .left {
+  width: 80px;
+  height: 80px;
+  float: left;
+}
+.item .item-one .left img {
+  width: 100%;
+}
+.item .item-one .right span {
+  color: grey;
+}
+.item .item-one .right .rate ion-icon {
+  color: #ff9900;
+  margin-top: 5px;
+}
+
+.item .item-tow {
+  text-align: left;
+  font-size: 18px;
+}
+.item .item-three {
+  margin-top: 10px;
+  color: grey;
+}
+
+/* .row-tow */
+.container .row-tow {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.container .row-tow .product-tow {
+  margin-bottom: 30px;
+  width: 265px;
+  height: 315px;
+  background-image: url("../images/product-7.jpg");
+  background-size: cover;
+  position: relative;
+}
+.container .row-tow .product-tow:hover {
+  background-image: url("../images/product-122.jpg");
+}
+.container .row-tow .product-tow .sale {
+  color: #fff;
+  background: #ff9900;
+  position: absolute;
+  text-align: center;
+  width: 57px;
+  height: 23px;
+  top: 30px;
+  left: 0px;
+}
+.container .row-tow .product-tow .new {
+  color: #ff9900;
+  background: #fff;
+  position: absolute;
+  text-align: center;
+  width: 57px;
+  height: 23px;
+  top: 30px;
+  left: 0px;
+}

@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Maven Pro", sans-serif;
+  font-weight: 400;
+}
+ul li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  margin: 0px auto;
+  width: 1170px;
+}
+
+.container-fluid {
+  width: 100%;
+  margin: 0px auto;
+}
+
+/* header */
+.container .row-header {
+  height: 115px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .row-header .logo {
+  width: 258px;
+  padding-top: 5px;
+}
+.container .row-header .menu {
+  width: 478px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .row-header .menu .link a {
+  color: #403c3c;
+}
+.container .row-header .menu .link-active a {
+  color: #007fba;
+}
+
+/* banner */
+/* row-banner-one */
+.container-fluid .row-banner-one {
+  background-image: url(../images/bg-banner.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.row-banner-one .row-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 375px;
+}
+
+.row-banner-one .row-banner .img {
+  padding-top: 16px;
+}
+.row-banner-one .row-banner .text-left {
+  width: 410px;
+  text-align: left;
+  color: white;
+  padding-left: 20px;
+}
+.row-banner-one .row-banner .text-right {
+  width: 410px;
+  text-align: right;
+  color: white;
+  padding-right: 20px;
+}
+.row-banner-one .row-banner h1 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.row-banner-one .row-banner p {
+  font-size: 14px;
+  line-height: 24px;
+  padding: 15px 0px;
+}
+.row-banner-one .row-banner .text-left button {
+  height: 40px;
+  width: 185px;
+  border-radius: 20px;
+  border: none;
+  background-color: #0080bb;
+
+  text-transform: uppercase;
+  font-weight: 600;
+  box-shadow: #005783 0px 5px;
+}
+.row-banner-one .row-banner .text-left button a {
+  color: white;
+}
+.row-banner-one .row-banner .text-right button {
+  height: 40px;
+  width: 185px;
+  border-radius: 20px;
+  border: none;
+  background-color: white;
+
+  text-transform: uppercase;
+  font-weight: 600;
+  box-shadow: #005783 0px 5px;
+}
+.row-banner-one .row-banner .text-right button a {
+  color: #0080bb;
+}
+
+/* row-banner-tow  */
+.container-fluid .row-banner-tow {
+  background: #0080bb;
+}
+
+.row-banner-tow .row-banner {
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+}
+.row-banner-tow .text {
+  color: white;
+}
+input#search {
+  width: 310px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  padding: 0px 15px;
+  font-size: 16px;
+}
+.row-banner-tow .search {
+  position: relative;
+}
+.row-banner-tow .search .icon {
+  position: absolute;
+  right: 12px;
+  bottom: 4px;
+}
+
+/* main */
+main .row-main {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+section {
+  /* background: red; */
+  width: 840px;
+}
+aside {
+  background: blue;
+  width: 300px;
+}
+/* main section */
+.title {
+  margin-bottom: 30px;
+}
+.title p a {
+  border-bottom: #0080bb solid 2px;
+  border-left: #0080bb solid 15px;
+  padding: 7px 10px;
+  font-size: 17px;
+  display: inline-block;
+  color: #353535;
+}
+.gym-clothing .product {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.gym-clothing .product .sub-product {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.gym-clothing .product .sub-product p a {
+  text-transform: uppercase;
+  line-height: 30px;
+  color: #5e5e5e;
+  font-size: 18px;
+}
+.gym-clothing .product .sub-product p {
+  line-height: 20px;
+  color: #353535;
+  font-size: 15px;
+}
+.gym-clothing .product .sub-product button {
+  width: 100px;
+  height: 26px;
+  color: white;
+  background-color: #0080bb;
+  border: none;
+  border-radius: 13px;
+  text-transform: capitalize;
+  margin-top: 10px;
+}
