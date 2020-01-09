@@ -91,3 +91,21 @@
   top: 30px;
   left: 0px;
 }
+/* responsive */
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 484px) {
+  .container {
+    width: 97%;
+  }
+  .container .row-one {
+    display: inherit;
+  }
+  .container .row-one .product {
+    width: 100%;
+  }
+  .container .row-tow .product-tow {
+    width: 47%;
+  }
+}

@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: 0px;
+  font-size: 16px;
 }
 body {
   font-family: "Maven Pro", sans-serif;
@@ -12,6 +14,20 @@ ul li {
 }
 a {
   text-decoration: none;
+  color: inherit;
+}
+img {
+  width: 100%;
+  display: block;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
 }
 .container {
   margin: 0px auto;
@@ -25,9 +41,10 @@ a {
 
 /* header */
 .container .row-header {
-  height: 115px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
 }
 
 .container .row-header .logo {
@@ -38,7 +55,6 @@ a {
   width: 478px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 .container .row-header .menu .link a {
   color: #403c3c;
@@ -51,14 +67,14 @@ a {
 /* row-banner-one */
 .container-fluid .row-banner-one {
   background-image: url(../images/bg-banner.png);
-  background-repeat: no-repeat;
+  background-repeat: round;
   background-size: 100%;
 }
 .row-banner-one .row-banner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 375px;
+  min-height: 375px;
 }
 
 .row-banner-one .row-banner .img {
@@ -79,6 +95,7 @@ a {
 .row-banner-one .row-banner h1 {
   font-size: 20px;
   text-transform: uppercase;
+  font-weight: 600;
 }
 .row-banner-one .row-banner p {
   font-size: 14px;
@@ -91,7 +108,6 @@ a {
   border-radius: 20px;
   border: none;
   background-color: #0080bb;
-
   text-transform: uppercase;
   font-weight: 600;
   box-shadow: #005783 0px 5px;
@@ -105,7 +121,6 @@ a {
   border-radius: 20px;
   border: none;
   background-color: white;
-
   text-transform: uppercase;
   font-weight: 600;
   box-shadow: #005783 0px 5px;
@@ -120,7 +135,7 @@ a {
 }
 
 .row-banner-tow .row-banner {
-  height: 75px;
+  min-height: 75px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -136,14 +151,15 @@ input#search {
   border: none;
   padding: 0px 15px;
   font-size: 16px;
+  font-family: inherit;
 }
 .row-banner-tow .search {
   position: relative;
 }
 .row-banner-tow .search .icon {
   position: absolute;
-  right: 12px;
-  bottom: 4px;
+  right: 10px;
+  bottom: 7px;
 }
 
 /* main */
@@ -152,20 +168,20 @@ main .row-main {
   display: flex;
   justify-content: space-between;
 }
-
 section {
-  /* background: red; */
   width: 840px;
 }
 aside {
-  background: blue;
   width: 300px;
 }
+
 /* main section */
+
+/* chung */
 .title {
   margin-bottom: 30px;
 }
-.title p a {
+.title h3 a {
   border-bottom: #0080bb solid 2px;
   border-left: #0080bb solid 15px;
   padding: 7px 10px;
@@ -173,27 +189,37 @@ aside {
   display: inline-block;
   color: #353535;
 }
+
+/* gym-clothing  */
 .gym-clothing .product {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.gym-clothing .product .sub-product {
+.gym-clothing .product .item {
+  width: 259px;
   margin-bottom: 30px;
   text-align: center;
 }
-.gym-clothing .product .sub-product p a {
+.gym-clothing .product .item .img {
+  margin-bottom: 10px;
+}
+.gym-clothing .product .item h2 a {
   text-transform: uppercase;
   line-height: 30px;
   color: #5e5e5e;
   font-size: 18px;
+  font-weight: 400;
 }
-.gym-clothing .product .sub-product p {
+
+/* chung */
+.product .item h5 {
   line-height: 20px;
   color: #353535;
   font-size: 15px;
+  font-weight: 600;
 }
-.gym-clothing .product .sub-product button {
+.product .item button {
   width: 100px;
   height: 26px;
   color: white;
@@ -202,4 +228,212 @@ aside {
   border-radius: 13px;
   text-transform: capitalize;
   margin-top: 10px;
+}
+
+/* whey-protein */
+.whey-protein .product {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.whey-protein .product .item {
+  width: 375px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.whey-protein .product .item .img {
+  width: 180px;
+}
+.whey-protein .product .item .info {
+  width: calc(100% - 195px);
+}
+.whey-protein .product .item h4 a {
+  line-height: 25px;
+  color: #5e5e5e;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* new */
+
+.news .product .item {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.news .product .item .img {
+  width: 300px;
+}
+.news .product .item .info {
+  width: calc(100% - 330px);
+}
+.news .product .item .info h2 {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #353535;
+  padding-bottom: 10px;
+}
+.news .product .item .info h6 {
+  color: #acacac;
+  padding-bottom: 20px;
+  font-size: 14px;
+}
+.news .product .item .info h5 {
+  color: #353535;
+  font-weight: 300;
+}
+
+/* main aside */
+.container .row-main .ads {
+  margin-bottom: 30px;
+}
+
+/* footer */
+.container-fluid .footer {
+  background: #0080bb;
+}
+.footer .row-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.row-footer .logo-footer {
+  width: 270px;
+  padding: 30px 0px 20px 0px;
+}
+.row-footer .text-footer {
+  text-align: center;
+  padding-bottom: 45px;
+}
+.row-footer .text-footer h4 {
+  color: white;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 1170px) and (min-width: 769px) {
+  .container {
+    width: 95%;
+  }
+  section {
+    width: 70%;
+  }
+  aside {
+    width: 28%;
+  }
+  .gym-clothing .product .item {
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 768px) and (min-width: 415px) {
+  .container {
+    width: 95%;
+  }
+  .container .row-header .logo {
+    width: 30%;
+  }
+  .container .row-header .menu {
+    width: 65%;
+  }
+  .container-fluid .row-banner-one {
+    background-size: auto;
+  }
+  .row-banner-one.row-banner .text-left {
+    width: 30%;
+  }
+  .row-banner-one.row-banner .text-right {
+    width: 30%;
+  }
+  main .row-main section {
+    width: 100%;
+  }
+  main .row-main aside {
+    display: none;
+  }
+  main .gym-clothing .product .item {
+    width: 32%;
+  }
+  main .whey-protein .product .item {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .container {
+    width: 95%;
+  }
+  .container-fluid .row-banner-one {
+    background-size: auto;
+  }
+  .container .row-header {
+    flex-direction: column;
+  }
+  .container .row-header .logo {
+    margin: auto;
+    padding: 0px;
+  }
+  .container .row-header .menu {
+    width: 100%;
+  }
+  .container-fluid .row-banner-one {
+    background-repeat: round;
+  }
+
+  .row-banner-one .row-banner {
+    flex-direction: column;
+  }
+  .row-banner-one .row-banner .text-left,
+  .row-banner-one .row-banner .text-right {
+    text-align: center;
+    width: 100%;
+    padding: 20px 0px;
+  }
+  .row-banner-one .row-banner .img {
+    width: 80%;
+    margin: 0px auto;
+  }
+
+  .row-banner-tow .row-banner {
+    display: inherit;
+  }
+  .row-banner-tow .text {
+    text-align: center;
+    padding: 10px 0px;
+  }
+  .row-banner-tow {
+    padding-bottom: 10px;
+  }
+  .row-banner-tow .search {
+    text-align: center;
+  }
+  .row-banner-tow .search .icon {
+    right: 35px;
+    bottom: 8px;
+  }
+  main .row-main section {
+    width: 100%;
+  }
+  main .row-main aside {
+    display: none;
+  }
+  .gym-clothing .product .item {
+    width: 48%;
+  }
+  .whey-protein .product .item {
+    width: 100%;
+  }
+
+  .news .product .item {
+    display: inherit;
+    text-align: center;
+  }
+  .news .product .item .img {
+    width: 100%;
+    padding: 0px 46px;
+  }
+  .news .product .item .info {
+    width: 100%;
+    padding-top: 10px;
+  }
 }
